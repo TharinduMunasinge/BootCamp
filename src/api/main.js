@@ -1,15 +1,12 @@
 
 var express = require('express')
-// import  greetHandler from './greet.js';
+var greetingHandler = require('./greet.js');
+var reportHandeler = require('./report.js');
 
 var app = express();
 
-
+app.get('/greet', greetingHandler) ;
+app.post('/report', reportHandeler) ;
 app.use('/', express.static('assets'));
-
-app.get('/greet', function(req, res){
-  res.json({'a':'b'});
-});
-
 
 app.listen(8080);

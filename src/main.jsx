@@ -15,12 +15,16 @@ const App = () => (
         <h1>Boot Camp example</h1>
       </div>
       <ul>
-        <li><Link to="/report">report</Link></li>
-        <li><Link to="/result">Result</Link></li>
+        <li><Link to="/report">Report</Link></li>
       </ul>
+      <form >
+        <table>
+          <tr><th>Name: </th> <input type="text" name="name" id="name"/></tr>
+          <tr><th></th> <th><input type='button' name="greet" value="greet"/></th></tr>
+        </table>
+      </form>
       <Route exact path="/" component={emptyBody}/>
       <Route path="/report" component={Report}/>
-      <Route path="/result" component={Result}/>
     </div>
   </ BrowserRouter>
 )

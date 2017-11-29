@@ -1,6 +1,5 @@
 
-export default  function(req, res){
-  res.json({'a':'b'});
-});
+module.exports =  function(req, res){
+};
 
 

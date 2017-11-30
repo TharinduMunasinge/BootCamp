@@ -9,3 +9,7 @@ This project is a demo project for boot camp excercises
 * Run `npm start`
 * Open `http://localhost:8080/` in browser
 
+## Run tests ?
+
+* Run `gulp test:custom --file <path to test-specs>`
+
